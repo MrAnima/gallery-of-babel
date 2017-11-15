@@ -1,0 +1,6 @@
+node_modules/
+
+public/bundle.js
+
+Thumbs.db
+desktop.ini

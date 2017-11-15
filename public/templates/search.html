@@ -1,0 +1,26 @@
+<h2>Search for an image</h2>
+<hr>
+<p>Draw a shape to look for in the gallery</p>
+
+<div class="row">
+  <div class="col">
+    <gob-picture editable="true" ng-model="bits"></gob-picture>
+  </div>
+  <div class="col">
+    <div class="btn-group-vertical">
+      <button class="btn" ng-click="clear()">Clear</button>
+      <button class="btn" ng-click="inverse()">Inverse</button>
+    </div>
+  </div>
+</div>
+
+<div ng-hide="result.length == 0" class="well">
+  <h2>Results</h2>
+  <hr>
+  <div class="list-group">
+    <a ng-repeat="result in results" href="#!/picture/{{ result.address }}" class="list-group-item">
+      <h4 class="list-group-item-heading"><b>{{ result.match }}</b></h4>
+      <p class="list-group-item-text" style="text-overflow: ellipsis;">Address: {{ result.address }}</p>
+    </a>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+{
+  "name": "gallery-of-babel",
+  "version": "0.0.1",
+  "description": "A remake of the \"Library of Babel\"... with pictures !",
+  "main": "main.js",
+  "scripts": {
+    "build": "browserify main.js -o src/bundle.js",
+    "test": "node test.js"
+  },
+  "keywords": [
+    "spa",
+    "angularjs",
+    "babel",
+    "gallery",
+    "picture",
+    "image"
+  ],
+  "author": "MrAnima",
+  "license": "CC-BY-4.0",
+  "dependencies": {
+    "aes-js": "^3.1.0",
+    "angular": "^1.6.6",
+    "angular-route": "^1.6.6",
+    "hex-array": "^1.0.0"
+  },
+  "devDependencies": {
+    "should": "^13.1.2"
+  }
+}
